@@ -1,6 +1,9 @@
 import { Routes } from '@angular/router';
-import { LandingPageComponent } from './main-content/landingPage/landingPage.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { ImprintComponent } from './imprint/imprint.component';
+
 
 export const routes: Routes = [
-  { path: '', component: LandingPageComponent }
+    { path: '', component: MainContentComponent },
+    { path: 'imprint', component: ImprintComponent}
 ];
