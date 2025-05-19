@@ -1,0 +1,101 @@
+.menu-section {
+  background-image: url(../../../assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+  padding: 60px 20px;
+  
+  h2 {
+    text-align: center;
+    color: #6B1A1A;
+    font-size: 42px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-family: 'Atomic Age', sans-serif;
+  }
+  
+  .menu-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .left, .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .left img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        &.text-left {
+          order: -1;
+          align-items: flex-end;
+          text-align: right;
+        }
+        
+        h3 {
+          font-size: 26px;
+          color: #4A1010;
+          margin-bottom: 16px;
+          font-weight: 600;
+        }
+        
+        .option-row {
+          display: flex;
+          justify-content: space-between;
+          width: 200px;
+          margin-bottom: 4px;
+          
+          .protein {
+            color: #777;
+            font-weight: 500;
+            flex: 1;
+          }
+          
+          .price {
+            color: #555;
+            font-weight: 500;
+            flex: 0 0 60px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-container .menu-item {
+      flex-direction: column;
+      gap: 20px;
+      
+      .right.text-left {
+        order: 0;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .left, .right {
+        width: 100%;
+      }
+      
+      .right .option-row {
+        width: 80%;
+        margin: 0 auto 4px;
+      }
+    }
+  }
+}

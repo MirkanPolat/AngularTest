@@ -1,0 +1,62 @@
+nav {
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;  // Padding innerhalb der Breite
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+    > img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    > div {
+        display: flex;
+        align-items: center; 
+        gap: 24px; 
+        
+        > a {
+            font-weight: 500;
+            transition: all 0.2s ease;
+            
+            &:hover {
+                text-decoration: underline;
+                color: #ff6b6b;
+            }
+        }
+        
+        .phone_btn {
+            display: flex;
+            align-items: center;
+            background-color: #ff0000;
+            border-radius: 8px;
+            padding: 4px 8px;
+            margin-left: 12px;
+            transition: all 0.2s ease;
+            
+            &:hover {
+                background-color: #e00000;
+                transform: scale(1.05);
+            }
+            
+            > img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+            
+            > a {
+                padding: 6px 12px;
+                color: white;
+                font-weight: bold;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
